@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HYPEtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HYPEtools/HYPEtools_{{ version }}.tar.gz
-  sha256: fc5699ce2f636ef0aebdf7d04824fd6862fbd391f628d715f43c3d46868c343a
+  sha256: 3b9a3202716ee6c500c0f51553549e1661a24981fffaed1fefbb2a2ff2964cca
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -59,12 +59,10 @@ test:
 about:
   home: https://github.com/rcapell/HYPEtools,https://hypeweb.smhi.se/
   license: LGPL-3.0-only
-  summary: 'Work with model files (setup, input, output) from the hydrological catchment model
-    HYPE: Streamlined file import and export, standard evaluation plot routines, diverse
-    post-processing and aggregation routines for hydrological model analysis.'
+  summary: 'Work with model files (setup, input, output) from the hydrological catchment model HYPE: Streamlined file import and export, standard evaluation plot routines, diverse post-processing and aggregation routines for hydrological model analysis.'
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
