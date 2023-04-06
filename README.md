@@ -1,11 +1,11 @@
-About r-hypetools
-=================
+About r-hypetools-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hypetools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://hypeweb.smhi.se/
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hypetools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Work with model files (setup, input, output) from the hydrological catchment model HYPE: Streamlined file import and export, standard evaluation plot routines, diverse post-processing and aggregation routines for hydrological model analysis.
 
