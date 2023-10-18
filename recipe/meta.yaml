@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HYPEtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HYPEtools/HYPEtools_{{ version }}.tar.gz
-  sha256: 295cce9cfc0a83eef9b58017dd8c17f898164f056314675742a1f2c1e6ff380a
+  sha256: 111a0ea0a517b87f316ddd73ff0f4dded092752661bc54a048cd74fc9088ca47
 
 build:
   merge_build_host: true  # [win]
