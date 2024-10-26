@@ -1,6 +1,5 @@
 {% set version = "1.6.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-hypetools
@@ -13,8 +12,7 @@ source:
   sha256: 222907338115abb2fcaef96a2693a2eb8517b3a211f8eba59b456dec34535b0b
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
