@@ -1,4 +1,4 @@
-{% set version = "1.6.7" %}
+{% set version = "1.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/HYPEtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/HYPEtools/HYPEtools_{{ version }}.tar.gz
-  sha256: 2d6d6e1eef481d03c0766d5785ea0c117e1650d1317be7b0a460e170f269e2b4
+  sha256: 78dcc29bdddbf68ab0863ac082dc022917850daba0440fb5d61fc2cb92cb9560
 
 build:
   number: 0
